@@ -30,20 +30,70 @@
     </div>
     <img src="../assets/images/myself.jpeg" alt="A picture of me">
   </div>
-  
+
   <div class="page-scroll-notifier">
     <img src="../assets/svgs/down.svg" alt="Github icon">
   </div>
 
-  <div class="page-experience-container" #experience>
+  <div class="page-section-header" #experience>
+    <span>Experiece</span>
+    <hr />
+  </div>
+
+  <div class="page-experience-container">
 
   </div>
 
-  <div class="page-skills-container" #skills>
-
+  <div class="page-section-header" #skills>
+    <span>Skills</span>
+    <hr />
   </div>
 
-  <div class="page-projects-container" #projects>
+  <div class="page-skills-container">
 
+    <div>
+      <div class="page-skills-sub">
+        <div>
+          <span>
+            Languages
+          </span>
+        </div>
+        <div>
+          <div class="triple-line">
+            <app-skill [skill]="skill" *ngFor="let skill of languages_first"></app-skill>
+          </div>
+          <div class="dual-line">
+            <app-skill [skill]="skill" *ngFor="let skill of languages_second"></app-skill>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="page-skills-sub">
+        <div>
+          <span>
+            Frameworks
+          </span>
+        </div>
+        <div>
+          <div class="triple-line">
+            <app-skill [skill]="skill" *ngFor="let skill of frameworks_first"></app-skill>
+          </div>
+          <div class="dual-line">
+            <app-skill [skill]="skill" *ngFor="let skill of frameworks_second"></app-skill>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section-header" #projects>
+    <span>Projects</span>
+    <hr />
+  </div>
+
+  <div class="page-projects-container">
+    <app-project [project]="project" *ngFor="let project of github_projects"></app-project>
   </div>
 </div>
