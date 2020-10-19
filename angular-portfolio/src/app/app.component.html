@@ -1,4 +1,4 @@
-<nav class="page-header">
+<nav class="page-header" [ngClass]="{'fixed-scroll-header': fixedHeader}">
   <div>
 
   </div>
@@ -41,7 +41,7 @@
   </div>
 
   <div class="page-experience-container">
-
+    <app-experience [experience]="experience" *ngFor="let experience of experiences"></app-experience>
   </div>
 
   <div class="page-section-header" #skills>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Experience } from 'src/app/models/experience.interface';
 
 @Component({
   selector: 'app-experience',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent implements OnInit {
+
+  @Input("experience") experience: Experience;
 
   constructor() { }
 

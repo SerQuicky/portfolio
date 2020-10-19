@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Skill } from '../app/models/skill.interface';
 import { Project } from '../app/models/project.interface';
 import { Experience } from '../app/models/experience.interface';
@@ -10,6 +10,8 @@ import { Experience } from '../app/models/experience.interface';
 })
 export class AppComponent {
   title = 'angular-portfolio';
+
+  public fixedHeader: boolean = false;
 
   public languages_first: Skill[] = [
     {name: "JavaScript", svg: "../../../assets/svgs/javascript.svg"},
@@ -40,14 +42,19 @@ export class AppComponent {
   ];
 
   public experiences: Experience[] = [
-    {title: "Bachelor at the University of Applied Sciences Flensburg", description: "Studied topics in software engineering, algorithms, security and mathematics. (Grade: 1.5)", timeline: "September 2016 - April 2020", image: "flensburg"},
-    {title: "Working Student at Tacoss Software GmbH", description: "Developing mobile- and web-application in Ionic and Angular", timeline: "September 2018 - today", image: "tacoss"},
-    {title: "Master at the University of Applied Sciences Flensburg", description: "Studying topics in mobile computing, security and human computer interactions", timeline: "April 2020 to today", image: "flensburg"}
+    {title: "Bachelor at the University of Applied Sciences Flensburg", description: "Studied topics in software engineering, algorithms, security and mathematics. (Grade: 1.5)", timeline: "September 2016 - April 2020", image: "../../../assets/images/flensburg.png"},
+    {title: "Working Student at Tacoss Software GmbH", description: "Developing mobile- and web-applications in Ionic and Angular", timeline: "September 2018 - today", image: "../../../assets/images/tacoss.png"},
+    {title: "Master at the University of Applied Sciences Flensburg", description: "Studying topics in mobile computing, security and human computer interactions", timeline: "April 2020 - today", image: "../../../assets/images/flensburg.png"}
   ]
 
   constructor() {}
 
   public scrollTo(target: HTMLElement): void {
     target.scrollIntoView({behavior: 'smooth'});
+  }
+
+  @HostListener('window:scroll', ['$event']) 
+  checkPageOffset(event) {
+    this.fixedHeader = window.pageYOffset > 110;
   }
 }
