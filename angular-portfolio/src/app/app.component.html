@@ -1,0 +1,49 @@
+<nav class="page-header">
+  <div>
+
+  </div>
+  <div>
+    <span (click)="scrollTo(experience)">Experience</span>
+  </div>
+  <div>
+    <span (click)="scrollTo(skills)">Skills</span>
+  </div>
+  <div>
+    <span (click)="scrollTo(projects)">Projects</span>
+  </div>
+  <div>
+    <img src="../assets/svgs/github.svg" alt="Github icon">
+  </div>
+</nav>
+
+<div class="page-content">
+  <div class="page-person-container">
+    <div>
+      <div class="person-text-holder">
+        <span class="person-name">
+          Michael Frank
+        </span>
+        <span class="person-description">
+          Software Developer
+        </span>
+      </div>
+    </div>
+    <img src="../assets/images/myself.jpeg" alt="A picture of me">
+  </div>
+  
+  <div class="page-scroll-notifier">
+    <img src="../assets/svgs/down.svg" alt="Github icon">
+  </div>
+
+  <div class="page-experience-container" #experience>
+
+  </div>
+
+  <div class="page-skills-container" #skills>
+
+  </div>
+
+  <div class="page-projects-container" #projects>
+
+  </div>
+</div>
