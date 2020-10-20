@@ -14,7 +14,13 @@
         grid-area: 1 / 1 / 4 / 2;
 
         img {
-            width: 100%;
+            width: 80%;
+            display: block;
+            margin: 15% auto;
+        }
+
+        .tacoss-img {
+            margin: 25% auto !important;
         }
     }
 
@@ -23,7 +29,6 @@
         
         span {
             color: #093d8d;
-            opacity: 0.8;
             text-align: center;
             font-family: "Montserrat", "Raleway", sans-serif;
             font-size: 22px;

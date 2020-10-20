@@ -1,7 +1,5 @@
 <nav class="page-header" [ngClass]="{'fixed-scroll-header': fixedHeader}">
-  <div>
-
-  </div>
+  <div></div>
   <div>
     <span (click)="scrollTo(experience)">Experience</span>
   </div>
@@ -12,7 +10,8 @@
     <span (click)="scrollTo(projects)">Projects</span>
   </div>
   <div>
-    <img src="../assets/svgs/github.svg" alt="Github icon">
+    <img src="../assets/svgs/github.svg" alt="Github icon" (click)="openLink()" *ngIf="!fixedHeader">
+    <img src="../assets/svgs/github_fixed.svg" alt="Github icon" (click)="openLink()" *ngIf="fixedHeader">
   </div>
 </nav>
 
@@ -36,7 +35,9 @@
   </div>
 
   <div class="page-section-header" #experience>
-    <span>Experiece</span>
+    <span class="title">Experiece</span>
+    <br>
+    <span class="description">Education and Working Experiences that I have had so far</span>
     <hr />
   </div>
 
@@ -45,7 +46,9 @@
   </div>
 
   <div class="page-section-header" #skills>
-    <span>Skills</span>
+    <span class="title">Skills</span>
+    <br>
+    <span class="description">Languages and skills I use and in which I have carried out projects</span>
     <hr />
   </div>
 
@@ -89,7 +92,9 @@
   </div>
 
   <div class="page-section-header" #projects>
-    <span>Projects</span>
+    <span class="title">Projects</span>
+    <br>
+    <span class="description">Projects that I have worked on or in which I have participated as one of the main contributers</span>
     <hr />
   </div>
 

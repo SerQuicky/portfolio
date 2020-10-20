@@ -1,6 +1,6 @@
 <div class="experience">
     <div class="experience-image">
-        <img [src]="experience.image" alt="Github icon">
+        <img [src]="experience.image" [ngClass]="{'tacoss-img': experience.code == 'tacoss'}" alt="Github icon">
     </div>
     <div class="experience-title">
         <span>{{experience.title}}</span>
