@@ -43,8 +43,8 @@ export class AppComponent {
 
   public experiences: Experience[] = [
     {title: "Bachelor at the University of Applied Sciences Flensburg", description: "Studied topics in software engineering, algorithms, security and mathematics. (Grade: 1.5)", timeline: "September 2016 - April 2020", image: "../../../assets/images/flensburg.png", code: "flensburg"},
-    {title: "Working Student at Tacoss Software GmbH", description: "Developing mobile- and web-applications in Ionic and Angular", timeline: "September 2018 - today", image: "../../../assets/images/tacoss.png", code: "tacoss"},
-    {title: "Master at the University of Applied Sciences Flensburg", description: "Studying topics in mobile computing, security and human computer interactions", timeline: "April 2020 - today", image: "../../../assets/images/flensburg.png", code: "flensburg"}
+    {title: "Working Student at Tacoss Software GmbH", description: "Developing mobile- and web-applications in Ionic and Angular.", timeline: "September 2018 - today", image: "../../../assets/images/tacoss.png", code: "tacoss"},
+    {title: "Master at the University of Applied Sciences Flensburg", description: "Studying topics in mobile computing, security and human computer interactions.", timeline: "April 2020 - today", image: "../../../assets/images/flensburg.png", code: "flensburg"}
   ]
 
   constructor() {}

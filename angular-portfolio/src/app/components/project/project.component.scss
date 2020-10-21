@@ -55,3 +55,18 @@
         }
     }
 }
+
+@media (min-width: 1280px) and (max-width: 1400px) {
+    .test {
+        width: 380px;
+        height: 175px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .test {
+        width: 60% !important;
+        grid-template-columns: 20% 1fr;
+        grid-template-rows: 40% 1fr;
+    }
+}
