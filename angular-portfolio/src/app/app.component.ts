@@ -13,6 +13,9 @@ export class AppComponent {
 
   public fixedHeader: boolean = false;
 
+  /*              skill list(s) for the skills section            
+              The is splitted, so it can be easier positioned            */
+
   public languages_first: Skill[] = [
     {name: "JavaScript", svg: "./assets/svgs/javascript.svg"},
     {name: "TypeScript", svg: "./assets/svgs/typescript.svg"},
@@ -35,11 +38,16 @@ export class AppComponent {
     {name: "SQLite", svg: "./assets/svgs/sqlite.svg"}
   ];
 
+    /*              list of github projects            */
+
   public github_projects: Project[] = [
     {name: "Ostratum", description: "Ostratum is a web-based application that supports developers to manage their app translations.", url: "https://github.com/SerQuicky/ostratum-translation-manager"},
     {name: "Elmlord", description: "Elmlord is a turn-based singleplayer strategy game, which is completely developed in the programming language Elm.", url: "https://github.com/flofe104/elmlord"},
     {name: "More projects", description: "There are also some smaller projects and tools for different topics, check them out :)", url: "https://github.com/SerQuicky"}
   ];
+
+
+      /*              list of experiences            */
 
   public experiences: Experience[] = [
     {title: "Bachelor at the University of Applied Sciences Flensburg", description: "Studied topics in software engineering, algorithms, security and mathematics. (Grade: 1.5)", timeline: "September 2016 - April 2020", image: "./assets/images/flensburg.png", code: "flensburg"},
@@ -49,6 +57,7 @@ export class AppComponent {
 
   constructor() {}
 
+  // scroll to the section
   public scrollTo(target: HTMLElement): void {
     target.scrollIntoView({behavior: 'smooth'});
   }
@@ -57,6 +66,7 @@ export class AppComponent {
     window.open("https://github.com/SerQuicky", '_blank');
   }
 
+  // event to determine if the header class should be changed
   @HostListener('window:scroll', ['$event']) 
   checkPageOffset(event) {
     this.fixedHeader = window.pageYOffset > 110;

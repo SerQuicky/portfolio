@@ -1,3 +1,11 @@
+/* ----------------------------------------------------------------
+
+                        Desktop-Layout
+
+---------------------------------------------------------------- */
+
+/* ----------------------- Header design ----------------------- */
+
 .page-header {
     height: 110px;
     width: 100%;
@@ -50,6 +58,8 @@
     z-index: 5;
 }
 
+/* ----------------------- Content design ----------------------- */
+
 .page-content {
     padding-top: 110px;
     width: 100%;
@@ -86,6 +96,9 @@
         width: 90%;
     }
 }
+
+
+/* ----------------------- Person section ----------------------- */
 
 .page-person-container {
     height: calc(100vh - 200px);
@@ -127,6 +140,8 @@
     }
 }
 
+/* ----------------------- Arrow down animation ----------------------- */
+
 .page-scroll-notifier {
     img {
         margin: 0 auto;
@@ -156,9 +171,15 @@
     }
 }
 
+/* ----------------------- Experiencenses section ----------------------- */
+
 .page-experience-container {
     height: 700px;
 }
+
+
+/* ----------------------- Skills section ----------------------- */
+
 
 .page-skills-container {
     height: 500px;
@@ -194,6 +215,9 @@
     }
 }
 
+/* ----------------------- Projects section ----------------------- */
+
+
 .page-projects-container {
     height: 500px;
     display: grid;
@@ -202,17 +226,36 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+
+/* ----------------------------------------------------------------
+
+                        HD-Laptop-Layout
+
+---------------------------------------------------------------- */
+
 @media (min-width: 1400px) and (max-width: 1500px) {
     .page-projects-container {
         width: 95% !important;
     }
 }
 
+/* ----------------------------------------------------------------
+
+                        MD-Laptop-Layout
+
+---------------------------------------------------------------- */
+
 @media (min-width: 1280px) and (max-width: 1400px) {
     .page-projects-container {
         width: 95% !important;
     }
 }
+
+/* ----------------------------------------------------------------
+
+                        Tablet-Layouts
+
+---------------------------------------------------------------- */
 
 @media (min-width: 1024px) and (max-width: 1279px) {
     .page-header {
@@ -346,6 +389,12 @@
         width: 100%;
     }
 }
+
+/* ----------------------------------------------------------------
+
+                        Mobile-Layouts
+
+---------------------------------------------------------------- */
 
 @media only screen and (min-width: 414px) and (max-width: 768px) {
 
