@@ -14,25 +14,25 @@ export class AppComponent {
   public fixedHeader: boolean = false;
 
   public languages_first: Skill[] = [
-    {name: "JavaScript", svg: "../../../assets/svgs/javascript.svg"},
-    {name: "TypeScript", svg: "../../../assets/svgs/typescript.svg"},
-    {name: "Java", svg: "../../../assets/svgs/java.svg"}
+    {name: "JavaScript", svg: "./assets/svgs/javascript.svg"},
+    {name: "TypeScript", svg: "./assets/svgs/typescript.svg"},
+    {name: "Java", svg: "./assets/svgs/java.svg"}
   ];
 
   public languages_second: Skill[] = [
-    {name: "Python", svg: "../../../assets/svgs/python.svg"},
-    {name: "Elm", svg: "../../../assets/svgs/elm.svg"}
+    {name: "Python", svg: "./assets/svgs/python.svg"},
+    {name: "Elm", svg: "./assets/svgs/elm.svg"}
   ];
 
   public frameworks_first: Skill[] = [
-    {name: "Angular", svg: "../../../assets/svgs/angular.svg"},
-    {name: "Ionic", svg: "../../../assets/svgs/ionic.svg"},
-    {name: "NodeJS", svg: "../../../assets/svgs/node-dot-js.svg"}
+    {name: "Angular", svg: "./assets/svgs/angular.svg"},
+    {name: "Ionic", svg: "./assets/svgs/ionic.svg"},
+    {name: "NodeJS", svg: "./assets/svgs/node-dot-js.svg"}
   ];
 
   public frameworks_second: Skill[] = [
-    {name: "Flask", svg: "../../../assets/svgs/flask.svg"},
-    {name: "SQLite", svg: "../../../assets/svgs/sqlite.svg"}
+    {name: "Flask", svg: "./assets/svgs/flask.svg"},
+    {name: "SQLite", svg: "./assets/svgs/sqlite.svg"}
   ];
 
   public github_projects: Project[] = [
@@ -42,9 +42,9 @@ export class AppComponent {
   ];
 
   public experiences: Experience[] = [
-    {title: "Bachelor at the University of Applied Sciences Flensburg", description: "Studied topics in software engineering, algorithms, security and mathematics. (Grade: 1.5)", timeline: "September 2016 - April 2020", image: "../../../assets/images/flensburg.png", code: "flensburg"},
-    {title: "Working Student at Tacoss Software GmbH", description: "Developing mobile- and web-applications in Ionic and Angular.", timeline: "September 2018 - today", image: "../../../assets/images/tacoss.png", code: "tacoss"},
-    {title: "Master at the University of Applied Sciences Flensburg", description: "Studying topics in mobile computing, security and human computer interactions.", timeline: "April 2020 - today", image: "../../../assets/images/flensburg.png", code: "flensburg"}
+    {title: "Bachelor at the University of Applied Sciences Flensburg", description: "Studied topics in software engineering, algorithms, security and mathematics. (Grade: 1.5)", timeline: "September 2016 - April 2020", image: "./assets/images/flensburg.png", code: "flensburg"},
+    {title: "Working Student at Tacoss Software GmbH", description: "Developed mobile- and web-applications in Ionic and Angular.", timeline: "September 2018 - today", image: "./assets/images/tacoss.png", code: "tacoss"},
+    {title: "Master at the University of Applied Sciences Flensburg", description: "Studying topics in mobile computing, security and human-computer interactions.", timeline: "April 2020 - today", image: "./assets/images/flensburg.png", code: "flensburg"}
   ]
 
   constructor() {}
