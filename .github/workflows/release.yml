@@ -21,7 +21,7 @@ jobs:
       with:
         node-version: 12.8
     - name: Create application
-      working-directory: ./app
+      working-directory: ./angular-portfolio
       run: |
           npm install
           ng build --prod --base-href ./    
