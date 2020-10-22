@@ -4,7 +4,7 @@ This is a software developer portfolio example written in TypeScript with the we
 
 The application does not have an backend, all the content is currently static.
 
-Live preview under: https://www.google.com
+Live preview under: https://serquicky.github.io/portfolio/
 
 ## How to run the application? 
 
