@@ -24,7 +24,13 @@ jobs:
       working-directory: ./angular-portfolio
       run: |
           npm install
-          npm build --prod --base-href ./    
+          npm run release
+          ls 
+          cp -a dist/. ../../.
+    - name: Check resutl
+      working-directory: ./
+      run: |
+          ls 
            
     # - run: npm run build --if-present
     # - run: npm test
