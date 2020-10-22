@@ -24,7 +24,7 @@ jobs:
       working-directory: ./angular-portfolio
       run: |
           npm install
-          npm build --prod --base-href ./    
+          npm run release    
            
     # - run: npm run build --if-present
     # - run: npm test
