@@ -27,6 +27,9 @@ jobs:
     - name: Switch and Install
       working-directory: ./angular-portfolio
       run: npm i
+    - name: Install angular
+      working-directory: ./angular-portfolio
+      run: npm i @angular/cli@10.0.7
     - name: Build the angular dist
       working-directory: ./angular-portfolio
       run: ng build --prod --base-href ./
