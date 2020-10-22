@@ -25,13 +25,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Switch and Install
-      working-directory: ./angular-portfolio
-      run: npm i
-    - name: Install angular
-      working-directory: ./angular-portfolio
-      run: npm i @angular/cli@10.0.7
-    - name: Build the angular dist
-      working-directory: ./angular-portfolio
-      run: ng build --prod --base-href ./
+    - working-directory: ./angular-portfolio
+    - run: npm i
+    - run: npm i @angular/cli@10.0.7
+    - run: ng build --prod --base-href ./
     # - run: npm run build --if-present
     # - run: npm test
