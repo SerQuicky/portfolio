@@ -22,24 +22,13 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Display path
-        run: pwd
-
       # Switch to the angular project
       - name: Switch to angular
-        run: cd angular-portfolio
-
-      # Switch to the angular project
-      - name: Display path
-        run: pwd
-
-      # Switch to the angular project
-      - name: Display files
-        run: echo ls
+        working-directory: ./angular-portfolio
 
       # Install npm dependencies
-      #- name: Install npm dependencies
-      #  run: npm install
+      - name: Install npm dependencies
+        run: npm install
 
       # Build angular dist
       #- name: Build dist
