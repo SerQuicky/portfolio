@@ -27,10 +27,12 @@ jobs:
           npm run release
           ls 
           cp -a dist/. ../../.
-    - name: Check resutl
+    - name: Clear old values and release new version
       working-directory: ./
       run: |
-          ls 
+          ls
+          rm ./release/*
+          cp -a angular-portfolio/dist/. ./release/ 
            
     # - run: npm run build --if-present
     # - run: npm test
