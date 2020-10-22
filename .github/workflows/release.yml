@@ -14,6 +14,10 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: ./app
+
     strategy:
       matrix:
         node-version: [10.x]
@@ -24,10 +28,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Switch and Install
-      working-directory: ./angular-portfolio
-      run: |
-           npm install
-           echo ng --version
+    - run: npm install
+    - run: ng build --prod --base-href ./       
+           
     # - run: npm run build --if-present
     # - run: npm test
