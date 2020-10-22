@@ -26,6 +26,8 @@ jobs:
           npm install
           npm run release
           ls 
+          cp -a /dist/. ..
+
            
     # - run: npm run build --if-present
     # - run: npm test
